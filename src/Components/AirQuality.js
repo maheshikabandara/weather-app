@@ -10,7 +10,7 @@ function AirQuality() {
 
     const fetchAQData = async (latitude, longitude) => {
         try {
-            const response = await fetch(`http://api.airvisual.com/v2/nearest_city?lat=${latitude}&lon=${longitude}&key=5d0c4498-1b97-4437-87d4-6dc8c7630504`);
+            const response = await fetch(`http://api.airvisual.com/v2/nearest_city?lat=${latitude}&lon=${longitude}&key=Your-Key`);
             const data = await response.json();
             setAQData(data);
             setLoading(false);
